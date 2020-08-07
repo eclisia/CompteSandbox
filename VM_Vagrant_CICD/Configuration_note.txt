@@ -1,0 +1,53 @@
+06018b7e7d46b1e70ff7b04a53de962262f66656 sonar
+
+jenkins git
+3d557bf03de9d7f0f91211ceaf795b72d3394646
+
+
+
+
+jenkins - sonar tuto 2
+1e0f95f4328247e139d145a6f430bc252e3dc987
+
+
+
+172.18.0.4
+
+
+
+sonar.projectKey=sonarqubetest
+sonar.login=admin
+sonar.password=admin
+sonar.sources=/var/jenkins_home/workspace/MySonarQubeTest
+sonar.host.url=http://172.18.0.4:9000/
+
+
+sonar.projectKey=Valaxy
+sonar.projectName=ValaxyDemo
+sonar.projectVersion=1.0
+sonar.login=admin
+sonar.password=admin
+sonar.host.url=http://172.18.0.4:9000/
+sonar.sources=/var/jenkins_home/workspace/My_first_Maven_Build
+
+
+sonar.sources=/var/jenkins_home/workspace/$JOB_NAME/<PROJECT_NAME>/src
+
+
+
+sonar.projectKey=sonarqubetest2
+sonar.login=admin
+sonar.password=admin
+sonar.sources=/var/jenkins_home/workspace/sonarqubetest2
+sonar.exclusions=vendor/**,storage/**,resources/**,**/*.java
+sonar.host.url=http://172.18.0.4:9000/
+
+******SHIELDS IO***********************************
+Pour jenkins
+http://176.169.194.190:8080/job/My_first_Maven_Build/
+
+******SHIELDS IO***********************************
+http://176.169.194.190:9000/job/My_first_Maven_Build/
+Pour sonar
+
+[![Quality Gate Status](http://176.169.194.190:9000/api/project_badges/measure?project=My_first_Maven_Build&metric=alert_status)](http://176.169.194.190:9000/dashboard?id=My_first_Maven_Build)
